@@ -1,0 +1,36 @@
+### --- DATA ENGINEERING SPECIFIC --- ###
+# Esclude tutte le cartelle dove scaricherai i dati (Raw, Processed, Silver, Gold)
+data/
+datasets/
+db/
+*.csv
+*.json
+*.parquet
+*.sqlite
+*.sql
+*.zip
+
+### --- PYTHON SPECIFIC --- ###
+# Esclude l'ambiente virtuale (fondamentale per non "sporcare" la repo)
+venv/
+env/
+.venv/
+bin/
+include/
+lib/
+
+# Esclude i file compilati di Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+### --- TOOLS & IDE --- ###
+# Esclude le configurazioni di VS Code e file di sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+### --- ENVIRONMENT VARIABLES --- ###
+# Esclude file con chiavi API o password (MAI caricarli su GitHub!)
+.env
